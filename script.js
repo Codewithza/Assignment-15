@@ -15,6 +15,9 @@ var student = {
   
   console.log(Object.keys(student).join(","));
 
+  // Output
+  // name,sclass,rollno
+
   
 
 //   2. Write a JavaScript program to delete the rollno property from the following object. Also print the object before or after deleting the property.
@@ -34,12 +37,18 @@ var student = {
   console.log("Before deleting rollno:");
   console.log(student);
   
-  delete student.rollno;
+// Outout
+// Before deleting rollno:
+//  {name: 'David Rayy', sclass: 'VI', rollno: 12}
+
   
   console.log("After deleting rollno:");
   console.log(student);
 
-  
+// Outout
+ //  After deleting rollno:
+//  {name: 'David Rayy', sclass: 'VI'}
+
 
 
 //   3. Write a JavaScript program to get the length of a JavaScript object.   
@@ -59,6 +68,10 @@ var student = {
   console.log(Object.keys(student).length);
 
   
+//  Output
+//  3
+
+
 
 
 //   4. Write a JavaScript program to display the reading status (i.e. display book name, author name and reading status) of the following books.   
@@ -104,6 +117,10 @@ var library = [
  });
 
 
+ // Output
+//  Book: The Road Ahead, Author: Bill Gates, Reading Status: true
+// Book: Walter Isaacson, Author: Steve Jobs, Reading Status: true
+// Book: Mockingjay: The Final Book of The Hunger Games, Author: Suzanne Collins, Reading Status: false
 
 
 
@@ -127,7 +144,8 @@ class Cylinder {
   console.log(cylinder.getVolume());
 
   
-
+// Output
+// 785.3982
 
 
 
@@ -154,8 +172,8 @@ function bubbleSort(arr) {
   
   console.log(bubbleSort([6, 4, 0, 3, -2, 1]));
 
-  
-
+  // Output
+  // (6) [-2, 0, 1, 3, 4, 6]
 
 
 //   7. Write a JavaScript program which returns a subset of a string.   
@@ -177,6 +195,9 @@ function getSubsets(str) {
   console.log(getSubsets("dog"));
 
   
+// Output
+// (6) ['d', 'do', 'dog', 'o', 'og', 'g']
+
 
 
 
@@ -201,7 +222,8 @@ function startClock() {
   
   startClock();
 
-  
+  // Output
+
 
 
 //   9. Write a JavaScript program to calculate the area and perimeter of a circle.   
@@ -228,6 +250,10 @@ class Circle {
   console.log(`Perimeter: ${circle.getPerimeter()}`);
 
   
+// Output
+// Area: 78.5398
+// Perimeter: 31.4159
+
 
 
 //   10. Write a JavaScript program to sort an array of JavaScript objects.   
@@ -290,8 +316,22 @@ var library = [
  
  console.log(library);
 
- 
+ // Output
+//  (3) [{…}, {…}, {…}]
+// 0
+// : 
+// {title: 'Walter Isaacson', author: 'Steve Jobs', libraryID: 4264}
+// 1
+// : 
+// {title: 'Mockingjay: The Final Book of The Hunger Games', author: 'Suzanne Collins', libraryID: 3245}
+// 2
+// : 
+// {title: 'The Road Ahead', author: 'Bill Gates', libraryID: 1254}
 
+
+
+
+ 
 //  11. Write a JavaScript function to print all the methods in an JavaScript object.   
 // Test Data :
 // console.log(all_properties(Array));
@@ -307,7 +347,9 @@ function all_properties(obj) {
   
   console.log(all_properties(Array));
 
-  
+    
+// Output
+  // (4) ['isArray', 'from', 'of', 'fromAsync']0: "isArray"1: "from"2: "of"3: "fromAsync"length: 4[[Prototype]]: Array(0)
 
 
 //   12. Write a JavaScript function to parse an URL.   
@@ -329,6 +371,8 @@ function parseURL(url) {
   console.log(parseURL('http://www.example.com/path?name=John#section1'));
 
   
+// Output
+// {protocol: 'http:', hostname: 'www.example.com', pathname: '/path', search: '?name=John', hash: '#section1', …}
 
 
 
@@ -345,7 +389,8 @@ function getAllProperties(obj) {
   
   console.log(getAllProperties(new Date()));
 
-  
+  // Output
+  // []length: 0[[Prototype]]: Array(0)
 
 
 //   14. Write a JavaScript function to retrieve all the values of an object's properties.   
@@ -362,7 +407,10 @@ function getAllValues(obj) {
     rollno: 12
   }));
 
-  
+  // Output
+  // (3) ['David Rayy', 'VI', 12]
+
+
 
 
 //   15. Write a JavaScript function to convert an object into a list of `[key, value]` pairs.   
@@ -379,7 +427,8 @@ function objectToList(obj) {
     rollno: 12
   }));
 
-  
+  // Output
+  // (3) [Array(2), Array(2), Array(2)]
 
 
 
@@ -403,9 +452,11 @@ function invert(obj) {
   }));
 
   
-
+// Output
+// {12: 'rollno', David Rayy: 'name', VI: 'sclass'}
 
   
+
 // 17. Write a JavaScript function to check whether an object contains given property. 
 
 
@@ -420,9 +471,16 @@ function hasProperty(obj, prop) {
     rollno: 12
   }, 'name'));
   
+  // true
+
   console.log(hasProperty({
     name: "David Rayy",
     sclass: "VI",
     rollno: 12
   }, 'age'));
   
+  // false
+
+  // Output
+ //  true
+//  false
